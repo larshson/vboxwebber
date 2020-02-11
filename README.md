@@ -5,6 +5,10 @@ The vboxwebber.py is generated from an XSL stylesheet and contains vbox API wrap
 
 The XSL stylesheet is based on the websrv-python.xsl file from the VirtualBox source package, but somewhat improved and modified to use zeep instead of ZSI. Documentation for classes and methods are also generated, hopefully removing the need of sitting with the SDK reference alongside when coding.
 
+## Installation
+```
+pip install vboxwebber
+```
 
 ## Usage
 Initialize a web session manager by specifying the URL for the VirtualBox web service, and optionally the URL for the wsdl file. For older web services, I didn't manage to get the wsdl file remotely, so it can be a local file, e.g. "file:///tmp/vboxweb.wsdl".
@@ -49,7 +53,7 @@ with open("/tmp/screenshot.png", "wb") as f:
 mgr.logoff(vbox)
 ```
 
-## Generating 
+## Generating new API wrappers
 The VirtualBox API doesn't change much, but should the need arise, it is easy to generate a new wrapper based on a specific VirtualBox release. Just download the VirtualBox source code, put the xsl stylesheet in src/VBox/Main/webservice and run:
   *  xsltproc websrv-zeep.xsl ../idl/VirtualBox.xidl > vboxwebber.py
 

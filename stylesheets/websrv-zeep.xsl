@@ -22,14 +22,6 @@
         when using the API. Most of these transformations are borrowed from    
         the doxygen.xsl stylesheet and modified to fit our needs.
           
-        TODO 1: only generate documentation based on configurable condition?
-        TODO 2: modify VirtualBox glue code to include this as a platform?
-        TODO 3: generate even better documentation with docstring syntax etc.
-
-        Until TODO 2 above is done, the output wrappers can preferably be
-        combined with the output from constants-python.xsl that matches
-        the version of the web service being used.
-
     Copyright (C) 2008-2016 Oracle Corporation
 
     This file is part of VirtualBox Open Source Edition (OSE), as

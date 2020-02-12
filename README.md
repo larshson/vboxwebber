@@ -1,4 +1,6 @@
 # vboxwebber
+[![Latest Release](https://img.shields.io/pypi/v/vboxwebber.svg)](https://pypi.python.org/pypi/vboxwebber/)
+
 The purpose of this project is to provide a <b>Python3</b> client for the VirtualBox remote <b>webservices</b> API. It is standalone in the way that it does not depend on the python libraries distributed with VirtualBox SDK (which to date only supports Python2 via the ancient ZSI library).
 
 The client is generated from an XSL stylesheet and contains vbox API wrapper functions that uses zeep as SOAP-library under the hood for remote access.
